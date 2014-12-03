@@ -14,7 +14,7 @@ void loop()
   Serial.println(x);
   delay(100);
   if(hashIn == 1){
-    Serial.println("Bitch");
+    Serial.println("Test");
     int t = 40;
     while(t > 0) {
       hashIn = digitalRead(hashPin);

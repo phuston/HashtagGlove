@@ -42,13 +42,9 @@ def record():
 
 def post(status_update):
 	#status = createTweet(status_update)
-	t = Twitter(auth = OAuth(
-		"2866728543-ffQOspRpE91aRZTBMC5QT1cafYxh5zhIqm4PisO",
-		"7jmQKSTGBU80LZNmq5KwAUARmoiXU58dDJC9mPpGJPjUf",
-		"KaLVQbEPXhTsJg3l35DekQopB",
-		"P6y08Y5ycMibtZoIjxXHOhaXMPZDYoXkLBhRKj1ZoFKyvIc368"))
+	t = Twitter(auth = OAuth(Authentification_Code_Here)) #Authentification code removed for security, will not link to Twitter
 
-	t.statuses.update(status=status_update)
+	t.statuses.update(status=status_update) 
 
 def createTweet(status_update):
 	status = "";
